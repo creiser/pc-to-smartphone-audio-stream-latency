@@ -1,0 +1,56 @@
+Used Software:
+- Transmission: TeamSpeak 3 https://play.google.com/store/apps/details?id=com.teamspeak.ts3client&hl=en 
+- Transmission: TeamSpeak 3 Server https://www.teamspeak.com/downloads
+- Transmission: SoundWire https://play.google.com/store/apps/details?id=com.georgie.SoundWireFree&hl=en
+- Transmission: SoundWire Server http://georgielabs.net/
+- Audio File Manipulation: Audacity https://sourceforge.net/projects/audacity/
+- Recording: Wavesurfer https://sourceforge.net/projects/wavesurfer/
+- Sound Visualization: Sonic Visualiser http://sonicvisualiser.org/
+
+When latency is lower than the duration of the test sound the two sound waves merge
+and the beginning of the echoed sound cannot be determined. The obvious solution would
+be to make the test sound short enough that the two sound waves don't merge anymore.
+Unfournately speakers can't playback abitriarly short sounds.
+
+A possible solution might be to use a sound with a known duration D and then calculate
+latency L given manually spotted start S and spotted end E: L = E - S - D
+
+Used sound:
+Waveform: Sine
+Frequency: 440 Hz
+Duration of sound: 1 second
+Duration of silence: 1 second
+(Created with Audacity)
+
+Sound is faded in for 0.5 seconds from 0% to 100% and then from 100% to 0% also for 0.5 seconds faded out
+in order to avoid click sounds, since quick changes of frequency/volume causes distortions during playback.
+These distortions make it in turn hard to determine the sound wave's beginning and end.
+
+Risks:
+PC hardware (hardware specific optimazations of audio encoder)
+PC other processes
+Smartphone hardware (hardware specific optimazations of audio decoder)
+Smartphone other processes
+WiFi signal strength
+Other devices accessing WiFi (parallel usage)
+Android Low Latency Audio Support
+
+Apps:
+SoundWire https://play.google.com/store/apps/details?id=com.georgie.SoundWireFree&hl=en
+WiFi Speaker https://play.google.com/store/apps/details?id=pixelface.android.audio
+wireless speaker for android https://play.google.com/store/apps/details?id=com.vnd.wifi_audio
+
+Github:
+Haensn
+
+Measurement:
+WiFi Direct (if possible)
+30 measurements, i.e. 30 test sounds
+Environment as silent as possible
+Environment with as few as possible WiFi hotspots (Interference possibly introduces a lot of variance)
+No gain on microphone (introduces noise otherwise)
+3 different pc smartphone combinations (one per team member: Johannes, Flo, Chris)
+
+Compute mean and variance for significance test
+High variance is bad for validity
+Recognition tool optionally developed by Johannes
