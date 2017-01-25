@@ -1,0 +1,58 @@
+Johannes:
+soundwire >= teamspeak:
+t = -40.896, df = 35.239, p-value < 2.2e-16
+alternative hypothesis: true difference in means is less than 0
+95 percent confidence interval:
+       -Inf -0.3052234
+sample estimates:
+ mean of x  mean of y 
+0.08922581 0.40760000 
+
+soundwire >= wifi-speaker:
+t = -24.806, df = 38.176, p-value < 2.2e-16
+alternative hypothesis: true difference in means is less than 0
+95 percent confidence interval:
+       -Inf -0.4623933
+sample estimates:
+ mean of x  mean of y 
+0.08922581 0.58533333 
+
+
+Florian:
+soundwire >= teamspeak:
+t = -35.542, df = 52.287, p-value < 2.2e-16
+alternative hypothesis: true difference in means is less than 0
+95 percent confidence interval:
+       -Inf -0.2663635
+sample estimates:
+mean of x mean of y 
+0.1364333 0.4159667 
+
+soundwire >= wifi-speaker:
+t = -44.652, df = 57.64, p-value < 2.2e-16
+alternative hypothesis: true difference in means is less than 0
+95 percent confidence interval:
+       -Inf -0.3753667
+sample estimates:
+mean of x mean of y 
+0.1364333 0.5264000 
+
+
+Chris:
+soundwire >= teamspeak:
+t = -116.18, df = 51.875, p-value < 2.2e-16
+alternative hypothesis: true difference in means is less than 0
+95 percent confidence interval:
+       -Inf -0.2571063
+sample estimates:
+mean of x mean of y 
+0.1144667 0.3753333 
+
+soundwire >= wifi-speaker:
+t = -24.684, df = 29.182, p-value < 2.2e-16
+alternative hypothesis: true difference in means is less than 0
+95 percent confidence interval:
+       -Inf -0.5284751
+sample estimates:
+mean of x mean of y 
+0.1144667 0.6820000 
