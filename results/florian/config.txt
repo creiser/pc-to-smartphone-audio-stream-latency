@@ -1,3 +1,0 @@
-PC processor: Intel Core i5-6200U
-PC graphic chip: Nvidia GeForce 940MX
-Smartphone model: Samsung Galaxy S3 Neo

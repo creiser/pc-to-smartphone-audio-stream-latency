@@ -1,3 +1,0 @@
-PC processor: Intel i7-3770k
-PC graphic chip: NVIDIA GTX 770
-Smartphone model: Samsung Galaxy S6

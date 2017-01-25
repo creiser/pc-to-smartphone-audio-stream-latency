@@ -1,3 +1,0 @@
-PC processor: *TODO*
-PC graphic chip: *TODO*
-Smartphone model: *TODO*
