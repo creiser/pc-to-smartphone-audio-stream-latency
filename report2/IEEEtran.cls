@@ -2602,14 +2602,14 @@
 \def\contentsname{Contents}
 \def\listfigurename{List of Figures}
 \def\listtablename{List of Tables}
-\def\refname{References}
+\def\refname{Literaturverzeichnis}
 \def\indexname{Index}
-\def\figurename{Fig.}
-\def\tablename{TABLE}
+\def\figurename{Abb.}
+\def\tablename{Tab.}
 \@IEEEcompsocconfonly{\def\figurename{Figure}}
 \def\partname{Part}
 \def\appendixname{Appendix}
-\def\abstractname{Abstract}
+\def\abstractname{Zusammenfassung}
 % IEEE specific names
 \def\IEEEkeywordsname{Index Terms}
 \def\IEEEproofname{Proof}
