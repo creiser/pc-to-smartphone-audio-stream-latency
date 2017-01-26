@@ -1,7 +1,7 @@
 Die in Abbildung \ref{boxplots} dargestellten Boxplots zeigen die Ergebnisse der insgesamt 9 Testreihen aufgeteilt auf die drei Leistungsklassen (LOW, MID, HIGH).
 
 
-\begin{figure}[H]
+\begin{figure}[h!]
 \begin{subfigure}[b]{0.5\textwidth}
 \includegraphics[width=\textwidth]{img/boxplotlow.png}
 \end{subfigure}
@@ -24,7 +24,7 @@ Nach bloßem Betrachten der Ergebnisse lässt sich die Tendenz verzeichnen, dass
 
 Die Ergebnisse der einzelnen Testreihen wurden dem Shapiro-Wilk Test unterzogen, um auf Normalverteilung zu überprüfen. Nur die Datenreihe der Leistungsklasse LOW und der App WFS verzeichnete dabei einen p-Wert über dem Signifikanzniveau von 0.05 mit einem Wert von 0.06187, wodurch es sich wahrscheinlich um eine Normalverteilung handelt. Bei allen anderen Datenreihen ist anzunehmen, dass diese nicht auf einer Normalverteilung basieren.
 
-In den meisten Datensätzen konnten wir keine Normalverteilung statistisch signifikant feststellen, allerdings sind in jeder Datenreihe 30 Ergebnisse enthalten. Dadurch ist es möglich, pro Geräteklasse einen T-Test zur Überprüfung der Hypothesen durchzuführen. Dabei ist zu beachten, dass der Datensatz von SW jeweils zweimal verwendet wird. Um das Problem des multiplen Testens zu umgehen, wird die Bonferoni-Korrektur angewandt. Dadurch wird das Signifikanzniveau halbiert und somit auf 0.025 gesetzt. Es werden pro Leistungsklasse zwei einseitige T-Tests durchgeführt, welche die Latenzen von SW mit TS und von SW mit WFS vergleichen.
+In den meisten Datensätzen konnten wir keine Normalverteilung statistisch signifikant feststellen, allerdings sind in jeder Datenreihe 30 Ergebnisse enthalten. Laut \cite{IEEEexample:Georges2007} ist dieser Stichprobenumfang ausreichend, um pro Leistungsklasse einen T-Test zur Überprüfung der Hypothesen durchzuführen. Dabei ist zu beachten, dass der Datensatz von SW jeweils zweimal verwendet wird. Um das Problem des multiplen Testens zu umgehen, wird die Bonferroni-Korrektur angewandt. Dadurch wird das Signifikanzniveau halbiert und somit auf 0.025 gesetzt. Es werden pro Leistungsklasse zwei einseitige T-Tests durchgeführt, welche die Latenzen von SW mit TS und von SW mit WFS vergleichen.
 
 \begin{table}[h]
 
@@ -51,7 +51,7 @@ SW/TS & -Inf -0.2663635 & -Inf -0.2571063 & -Inf -0.3052234 \\
 SW/WFS & -Inf -0.3753667 & -Inf -0.5284751 & -Inf -0.4623933 \\
 
 \end{tabular}
-\caption{95\% - Konfidenzintervalle der T-Tests}
+\caption{95\%-Konfidenzintervalle der T-Tests}
 \end{table}
 
 Es kann abgelesen werden, dass in 95\% der Fälle die Latenz von SW je nach Leistungsklasse und zu vergleichender App zwischen rund 257ms und 528ms geringer ausfällt.
